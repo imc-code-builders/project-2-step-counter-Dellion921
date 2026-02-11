@@ -59,7 +59,7 @@ def count_steps(magnitudes, threshold=STEP_THRESHOLD):
 
 if __name__ == "__main__":
     try:
-        times, magnitudes = read_csv("data/sample_data.csv")
+        times, magnitudes = read_csv("microbit.csv")
         step_count = count_steps(magnitudes)
         print(f"Loaded {len(magnitudes)} data points")
         print(f"Detected {step_count} steps")
